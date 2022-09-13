@@ -19,3 +19,15 @@ jobs:
         timeout-minutes: 10
         with:
           browser: firefox
+
+      - name: run cypress tests with chrome
+        uses: cypress-io/github-action@v4.1.0
+        timeout-minutes: 10
+        with:
+          browser: chrome
+
+      - name: run cypress tests with electron
+        uses: cypress-io/github-action@v4.1.0
+        timeout-minutes: 10
+        with:
+          browser: electron          
